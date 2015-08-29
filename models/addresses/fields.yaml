@@ -1,0 +1,42 @@
+# ===================================
+#  Field Definitions
+# ===================================
+fields:
+    url:
+        span: left
+        label: uxms.sharecount::lang.addresses.url.title
+        commentAbove: uxms.sharecount::lang.addresses.url.desc
+
+    last_fetched:
+        tab: uxms.sharecount::lang.addresses.statistics
+        label: uxms.sharecount::lang.addresses.last_fetched.title
+        commentAbove: uxms.sharecount::lang.addresses.last_fetched.desc
+        span: left
+        type: datepicker
+
+    count_face:
+        tab: uxms.sharecount::lang.addresses.statistics
+        label: uxms.sharecount::lang.addresses.count_face.title
+        commentAbove: uxms.sharecount::lang.addresses.count_face.desc
+        span: left
+        type: number
+        default: 0
+        disabled: true
+
+    count_twit:
+        tab: uxms.sharecount::lang.addresses.statistics
+        label: uxms.sharecount::lang.addresses.count_twit.title
+        commentAbove: uxms.sharecount::lang.addresses.count_twit.desc
+        span: right
+        type: number
+        default: 0
+        disabled: true
+
+    count_gp:
+        tab: uxms.sharecount::lang.addresses.statistics
+        label: uxms.sharecount::lang.addresses.count_gp.title
+        commentAbove: uxms.sharecount::lang.addresses.count_gp.desc
+        span: left
+        type: number
+        default: 0
+        disabled: true

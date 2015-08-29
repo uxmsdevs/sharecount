@@ -1,0 +1,30 @@
+# ===================================
+#  Column Definitions
+# ===================================
+columns:
+    url:
+        label: uxms.sharecount::lang.addresses.url.form_title
+        searchable: true
+        sortable: yes
+
+    last_fetched:
+        label: uxms.sharecount::lang.addresses.last_fetched.form_title
+        type: text
+#        format: j F Y\, l h:i:s A
+        searchable: true
+        sortable: yes
+
+    count_face:
+        label: uxms.sharecount::lang.addresses.count_face.form_title
+        searchable: yes
+        sortable: yes
+
+    count_twit:
+        label: uxms.sharecount::lang.addresses.count_twit.form_title
+        searchable: yes
+        sortable: yes
+
+    count_gp:
+        label: uxms.sharecount::lang.addresses.count_gp.form_title
+        searchable: yes
+        sortable: yes

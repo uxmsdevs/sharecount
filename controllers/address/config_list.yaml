@@ -1,0 +1,17 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+title: uxms.sharecount::lang.addresses.page_title
+list: @/plugins/uxms/sharecount/models/addresses/columns.yaml
+modelClass: Uxms\Sharecount\Models\Addresses
+recordUrl: uxms/sharecount/address/update/:id
+noRecordsMessage: backend::lang.list.no_records
+recordsPerPage: 20
+showCheckboxes: true
+showSetup: true
+
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: backend::lang.list.search_prompt

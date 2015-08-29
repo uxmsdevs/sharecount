@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: uxms.sharecount::lang.addresses.page_title_one
+form: ~/plugins/uxms/sharecount/models/addresses/fields.yaml
+modelClass: Uxms\Sharecount\Models\Addresses
+defaultRedirect: uxms/sharecount/address
+
+create:
+    redirect: uxms/sharecount/address/update/:id
+    redirectClose: uxms/sharecount/address
+
+update:
+    redirect: uxms/sharecount/address
+    redirectClose: uxms/sharecount/address

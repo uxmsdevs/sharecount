@@ -1,0 +1,18 @@
+fields:
+    cache_time_out:
+        span: left
+        type: dropdown
+        label: uxms.sharecount::lang.settings.cache_time_out.title
+        comment: uxms.sharecount::lang.settings.cache_time_out.desc
+
+    timezone:
+        span: right
+        type: dropdown
+        label: uxms.sharecount::lang.settings.timezone.title
+        comment: uxms.sharecount::lang.settings.timezone.desc
+
+#    fetch_with_cron:
+#        span: left
+#        type: switch
+#        label: uxms.sharecount::lang.settings.fetch_with_cron.title
+#        commentAbove: uxms.sharecount::lang.settings.fetch_with_cron.desc
