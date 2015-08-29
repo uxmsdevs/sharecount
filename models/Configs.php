@@ -12,6 +12,7 @@ class Configs extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
+    public $rules = [];
     public $implement = ['System.Behaviors.SettingsModel'];
 
     public $settingsCode = 'uxms_sharecount_configs';
