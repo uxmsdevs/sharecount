@@ -3,7 +3,7 @@
 use October\Rain\Database\Model;
 
 /**
- * Uxms RESTful API Settings Model
+ * Uxms Sharecount Configs Model
  *
  * @package uxms\sharecount
  * @author Uxms Devs
