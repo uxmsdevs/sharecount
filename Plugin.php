@@ -57,7 +57,8 @@ class Plugin extends PluginBase
     public function registerSchedule($schedule)
     {
         $schedule->call(function() {
-            ShareCount::instance()->updateShareCounts();
+            // TODO: Will be fixed
+            // ShareCount::instance()->updateShareCounts();
         })->everyFiveMinutes();
     }
 
