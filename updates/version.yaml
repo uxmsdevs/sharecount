@@ -1,3 +1,4 @@
 1.0.0:
     - Plugin Init
     - create_sharecount_webpages.php
+1.0.1: PSR4 and some typo fixes

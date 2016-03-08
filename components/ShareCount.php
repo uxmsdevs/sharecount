@@ -5,6 +5,7 @@ use Cms\Classes\ComponentBase;
 use Uxms\Sharecount\Models\Configs;
 use Uxms\Sharecount\Models\Addresses;
 
+
 class ShareCount extends ComponentBase
 {
     public function componentDetails()
@@ -148,6 +149,7 @@ class ShareCount extends ComponentBase
             CURLOPT_SSL_VERIFYHOST  => 0,
             CURLOPT_SSL_VERIFYPEER  => false,
         );
+
         $ch = curl_init();
 
         $options[CURLOPT_URL] = $encUrl;
@@ -174,6 +176,7 @@ class ShareCount extends ComponentBase
         if ($this->property('webpage') == null || $this->property('webpage') <= 0) {
             return Lang::get('uxms.sharecount::lang.generic.check_configs');
         }
+
         if ($this->needUpdateCount()) {
             $this->updateCurrentUrlDate();
             return $this->fetchFacebook();
@@ -187,6 +190,7 @@ class ShareCount extends ComponentBase
         if ($this->property('webpage') == null || $this->property('webpage') <= 0) {
             return Lang::get('uxms.sharecount::lang.generic.check_configs');
         }
+
         if ($this->needUpdateCount()) {
             $this->updateCurrentUrlDate();
             return $this->fetchTwitter();
@@ -200,6 +204,7 @@ class ShareCount extends ComponentBase
         if ($this->property('webpage') == null || $this->property('webpage') <= 0) {
             return Lang::get('uxms.sharecount::lang.generic.check_configs');
         }
+
         if ($this->needUpdateCount()) {
             $this->updateCurrentUrlDate();
             return $this->fetchGoogleplus();
@@ -218,9 +223,8 @@ class ShareCount extends ComponentBase
         $paramsURL = self::_parse("http://graph.facebook.com/?id=".urlencode($this->urlData['url']));
         $paramsURLCount = json_decode($paramsURL, true);
 
-        if (!isset($paramsURLCount['id'])) {
+        if (!isset($paramsURLCount['id']))
             return false;
-        }
 
         $this->count_face = isset($paramsURLCount['shares']) ? $paramsURLCount['shares'] : 0;
 
@@ -241,9 +245,8 @@ class ShareCount extends ComponentBase
         $paramsURL = self::_parse("http://cdn.api.twitter.com/1/urls/count.json?url=".$this->urlData['url']);
         $paramsURLCount = json_decode($paramsURL, true);
 
-        if (!isset($paramsURLCount['count'])) {
+        if (!isset($paramsURLCount['count']))
             return false;
-        }
 
         $this->count_twit = $paramsURLCount['count'];
 

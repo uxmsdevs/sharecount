@@ -2,12 +2,7 @@
 
 use October\Rain\Database\Model;
 
-/**
- * Model for fetching and updating URLs
- *
- * @package uxms\sharecount
- * @author Uxms Devs
- */
+
 class Addresses extends Model
 {
     use \October\Rain\Database\Traits\Validation;
@@ -21,5 +16,4 @@ class Addresses extends Model
     protected $purgeable = ['last_fetched'];
 
     //public $dates = ['last_fetched'];
-
 }

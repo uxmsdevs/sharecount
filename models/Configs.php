@@ -2,12 +2,6 @@
 
 use October\Rain\Database\Model;
 
-/**
- * Uxms Sharecount Configs Model
- *
- * @package uxms\sharecount
- * @author Uxms Devs
- */
 class Configs extends Model
 {
     use \October\Rain\Database\Traits\Validation;
@@ -40,6 +34,4 @@ class Configs extends Model
         }
         return $allTimeZones;
     }
-
-
 }

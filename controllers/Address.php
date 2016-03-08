@@ -5,12 +5,7 @@ use BackendMenu;
 use Backend\Classes\Controller;
 use Uxms\Sharecount\Models\Addresses;
 
-/**
- * API Relation Address Controller
- *
- * @package uxms\sharecount
- * @author Uxms Devs
- */
+
 class Address extends Controller
 {
     public $implement = [
@@ -31,10 +26,8 @@ class Address extends Controller
 
     public function index_onDelete()
     {
-        if(($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds))
-        {
-            foreach ($checkedIds as $relationId)
-            {
+        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
+            foreach ($checkedIds as $relationId) {
                 if (!$role = Addresses::find($relationId))
                     continue;
 
